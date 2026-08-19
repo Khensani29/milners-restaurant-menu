@@ -1,1 +1,14 @@
+restaurant_name: "Milner's Restaurant"
+tagline: "Good food. Unhurried moments."
+intro_text: "Welcome to Milner's Restaurant at Holiday Inn Johannesburg Sunnyside Park."
 
+logo: ""
+hero_image: ""
+
+primary_colour: "#26362c"
+secondary_colour: "#c9bfae"
+background_colour: "#f7f3ed"
+text_colour: "#29251f"
+muted_text_colour: "#5f5a52"
+
+footer_text: "Holiday Inn Johannesburg Sunnyside Park"
