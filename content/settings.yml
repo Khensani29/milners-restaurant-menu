@@ -1,14 +1,12 @@
-restaurant_name: "Milner's Restaurant"
-tagline: "Good food. Unhurried moments."
-intro_text: "Welcome to Milner's Restaurant at Holiday Inn Johannesburg Sunnyside Park."
-
-logo: ""
+restaurant_name: Milner's Restaurant
+tagline: Good food. Unhurried moments.
+intro_text: Welcome to Milner's Restaurant at Holiday Inn Johannesburg Sunnyside Park.
+logo: /images/uploads/1.jpg
 hero_image: ""
-
-primary_colour: "#26362c"
-secondary_colour: "#c9bfae"
-background_colour: "#f7f3ed"
-text_colour: "#29251f"
-muted_text_colour: "#5f5a52"
-
-footer_text: "Holiday Inn Johannesburg Sunnyside Park"
+primary_colour: "#1c4b34"
+secondary_colour: "#9bc5b7"
+background_colour: "#ffffff"
+text_colour: "#000000"
+muted_text_colour: "#7f988e"
+footer_text: Holiday Inn Johannesburg Sunnyside Park Princess of Wales Terrace
+  CNR Carse O' Gowrie & Sunnyside Drive Johannesburg 2041 South Africa
