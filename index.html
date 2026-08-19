@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Restaurant Menu | Holiday Inn Johannesburg Sunnyside Park</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: #f7f3ed;
+        color: #29251f;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+
+    header {
+        background: #26362c;
+        color: white;
+        text-align: center;
+        padding: 45px 20px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 32px;
+        font-weight: normal;
+    }
+
+    header p {
+        margin: 12px 0 0;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 20px 18px 60px;
+    }
+
+    .menu-nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: #f7f3ed;
+        padding: 14px 0;
+        border-bottom: 1px solid #ddd5ca;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .menu-nav a {
+        color: #26362c;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-right: 18px;
+    }
+
+    section {
+        padding-top: 28px;
+    }
+
+    section h2 {
+        color: #26362c;
+        font-size: 26px;
+        font-weight: normal;
+        margin: 0 0 5px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #c9bfae;
+    }
+
+    .section-note {
+        color: #655f56;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.6;
+        margin: 12px 0;
+    }
+
+    .menu-item {
+        padding: 18px 0;
+        border-bottom: 1px solid #e1dbd2;
+    }
+
+    .item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 20px;
+    }
+
+    .menu-item h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.3;
+    }
+
+    .price {
+        color: #26362c;
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .menu-item p {
+        margin: 8px 0 0;
+        color: #5f5a52;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .dietary {
+        display: inline-block;
+        margin-left: 5px;
+        color: #526d58;
+        font-family: Arial, sans-serif;
+        font-size: 9px;
+        letter-spacing: 0.8px;
+        vertical-align: middle;
+    }
+
+    .sub-item {
+        margin-top: 18px;
+        padding-top: 18px;
+        border-top: 1px solid #eee8df;
+    }
+
+    footer {
+        background: #26362c;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+    }
+
+    @media (max-width: 500px) {
+        header {
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            font-size: 27px;
+        }
+
+        main {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .item-header {
+            gap: 10px;
+        }
+
+        .menu-item h3 {
+            font-size: 17px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Restaurant Menu</h1>
+    <p>Holiday Inn Johannesburg Sunnyside Park</p>
+</header>
+
+<main>
+
+    <nav class="menu-nav">
+        <a href="#starters">Starters</a>
+        <a href="#salads">Salads</a>
+        <a href="#pasta">Pasta</a>
+        <a href="#mains">Mains</a>
+        <a href="#desserts">Desserts</a>
+    </nav>
+
+    <!-- STARTERS -->
+    <section id="starters">
+        <h2>Starters</h2>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Soup of the Day</h3>
+                <span class="price">R75</span>
+            </div>
+            <p>
+                Our Soup of the Day is suitable for those following a vegetarian diet.
+                Please ask your waiter what the Chef has prepared today.
+                Served with a fresh bread roll and butter.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Crisp Onion Rings</h3>
+                <span class="price">R50</span>
+            </div>
+            <p>Battered and fried until crunchy.</p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Smoked Trout, and Friends</h3>
+                <span class="price">R120</span>
+            </div>
+            <p>
+                This is a flavour-vibrant salad of local smoked trout,
+                tangy pickled cucumber, and sweet-piquant Peppadews.
+                Served with buttered, sliced brown bread.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>
+                    Sweet Potato Waffle
+                    <span class="dietary">VEGETARIAN</span>
+                </h3>
+                <span class="price">R125</span>
+            </div>
+            <p>
+                Made with oats, flour, almond milk and applesauce, baked in the iron
+                and then topped with black beans, tomatoes, radishes, sriracha
+                and sesame seeds.
+            </p>
+        </div>
+    </section>
+
+    <!-- SALADS -->
+    <section id="salads">
+        <h2>Salads</h2>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Greek Salad</h3>
+                <span class="price">R105</span>
+            </div>
+            <p>
+                A rustic dish featuring ripe tomato wedges, diced cucumber,
+                sliced red onion, feta cheese and olives. Topped with garlic croutons
+                and dressed with balsamic vinegar and olive oil.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Our Kedgeree Salad</h3>
+                <span class="price">R125</span>
+            </div>
+            <p>
+                Flaked smoked haddock with sliced, lightly boiled egg, fresh herbs
+                and roasted pumpkin seeds. Served on a bed of shredded lettuce
+                and dressed with a simple fresh lime and olive oil vinaigrette.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>
+                    Tabbouleh
+                    <span class="dietary">VEGETARIAN</span>
+                </h3>
+                <span class="price">R80</span>
+            </div>
+            <p>
+                This refreshing Mediterranean dish is crisp, vibrant, nutritious
+                and perfect as a light, healthy meal. Packed with parsley,
+                bulgur wheat, chopped tomatoes and diced onion, it is brought to life
+                by a bright, zesty lemon-olive oil dressing.
+            </p>
+        </div>
+    </section>
+
+    <!-- PASTA -->
+    <section id="pasta">
+        <h2>Pasta</h2>
+
+        <p class="section-note">
+            Please let the waiter know your choice of Spaghetti, Tagliatelle, or Penne.
+        </p>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Alfredo</h3>
+                <span class="price">R110</span>
+            </div>
+            <p>
+                A rich, creamy, and smooth sauce of butter and grated Parmesan cheese,
+                with a touch of garlic, fresh white pepper and nutmeg.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Bolognese</h3>
+                <span class="price">R175</span>
+            </div>
+            <p>
+                Rich, slow-cooked sauce of beef, aromatic vegetables,
+                red wine and a touch of tomato.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>
+                    Mushroom and Green Peas
+                    <span class="dietary">VEGETARIAN</span>
+                </h3>
+                <span class="price">R150</span>
+            </div>
+            <p>
+                Mushroom and green peas simmered in a reduced smoked paprika
+                and soy oat milk-coconut cream sauce, served topped with
+                smoky coconut shavings.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAINS -->
+    <section id="mains">
+        <h2>Mains</h2>
+
+        <p class="section-note">
+            All Main Courses are served with your choice of:
+            Thick cut French fries, parsley mashed potato, pap, savoury samp,
+            plain basmati or savoury rice, plus today's fresh vegetable selection
+            or a side salad.
+        </p>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>English Style Fish and Chips</h3>
+                <span class="price">R180</span>
+            </div>
+            <p>
+                Also available as grilled. A whole hake fillet in a golden crisp
+                beer batter. Served with tartare sauce and fresh lemon wedges.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Grilled Kingklip</h3>
+                <span class="price">R250</span>
+            </div>
+            <p>Served with a lemon butter sauce.</p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Parmesan Chicken</h3>
+                <span class="price">R150</span>
+            </div>
+            <p>
+                A tender, Parmesan-breaded chicken breast, pan-fried,
+                topped with mozzarella gratinated until golden and served
+                on a chunky tomato chutney.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Grilled Chicken Leg Quarter</h3>
+                <span class="price">R130</span>
+            </div>
+            <p>
+                Basted with a Portuguese-style sauce and char-grilled.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Lamb Curry</h3>
+                <span class="price">R210</span>
+            </div>
+            <p>
+                Slow-cooked in an aromatic sauce spiced with turmeric,
+                cumin, coriander, ginger, garlic and tomato, finished with
+                fresh coriander and served with a variety of sambals and a papadum.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>
+                    Spanish Omelette
+                    <span class="dietary">VEGETARIAN</span>
+                </h3>
+                <span class="price">R105</span>
+            </div>
+            <p>
+                Eggless and gluten-free, this is our vegan take on the classic
+                Tortilla Española. We make it with chickpea flour, spices and
+                tender potato slices then serve it topped with a fresh garden salad.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>
+                    The Best Bean Balls
+                    <span class="dietary">VEGETARIAN</span>
+                </h3>
+                <span class="price">R110</span>
+            </div>
+            <p>
+                Kidney beans, herbs and spices, oats and chickpea flour
+                well blended and nicely cooked, and served with our homemade
+                tomato sauce.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Flame Grilled Lamb Cutlets</h3>
+                <span class="price">R250</span>
+            </div>
+            <p>
+                Three lamb cutlets, seasoned with our own secret blend of
+                olive oil and herbs, flame-grilled and served with our own
+                Sunnyside Park Holiday Inn mint sauce.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Pork Ribs</h3>
+                <span class="price">R180</span>
+            </div>
+            <p>
+                These succulent, fall-off-the-bone pork ribs are grilled to
+                smoky perfection and slathered in an irresistible, glossy,
+                and sticky barbecue glaze.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>From the Grill</h3>
+            </div>
+
+            <p>
+                Our expertly aged steaks are cooked precisely to your preference.
+                <br><br>
+                Please choose your favourite side sauces from:
+                Mushroom, Green Peppercorn, Cheese, Monkey Gland.
+            </p>
+
+            <div class="sub-item">
+                <div class="item-header">
+                    <h3>T-bone — 350g</h3>
+                    <span class="price">R240</span>
+                </div>
+                <p>350g of pure pleasure!</p>
+            </div>
+
+            <div class="sub-item">
+                <div class="item-header">
+                    <h3>Sirloin — 300g</h3>
+                    <span class="price">R200</span>
+                </div>
+                <p>300g of tender flavour.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESSERTS -->
+    <section id="desserts">
+        <h2>Desserts</h2>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Fresh Fruit Salad and Ice Cream</h3>
+                <span class="price">R85</span>
+            </div>
+            <p>
+                A refreshing mix of seasonal fresh fruit topped with
+                a velvety scoop of vanilla ice cream.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Vanilla Ice Cream and Chocolate Sauce</h3>
+                <span class="price">R75</span>
+            </div>
+            <p>
+                3 scoops of creamy vanilla accompanied with a serving
+                of rich, warm chocolate sauce.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Homemade Banoffee Pie</h3>
+                <span class="price">R80</span>
+            </div>
+            <p>
+                A no-bake dessert of crushed biscuit-butter crust smothered
+                in thick caramel and fresh banana slices, and topped with whipped cream.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>Passionfruit Cheesecake</h3>
+                <span class="price">R105</span>
+            </div>
+            <p>
+                A refreshing balance of cream cheese and zesty, tart passionfruit
+                set on a crushed gingernut base and spread with passionfruit jelly.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>
+                    Banana Brownies
+                    <span class="dietary">VEGETARIAN</span>
+                </h3>
+                <span class="price">R80</span>
+            </div>
+            <p>
+                Incredibly delicious, completely plant-based, marbled with
+                peanut butter and sprinkled with cinnamon.
+            </p>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-header">
+                <h3>
+                    Carrot Cake
+                    <span class="dietary">VEGETARIAN</span>
+                </h3>
+                <span class="price">R80</span>
+            </div>
+            <p>
+                Made with applesauce and glazed with lemon,
+                it contains no butter, milk or eggs.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    Holiday Inn Johannesburg Sunnyside Park
+</footer>
+
+</body>
+</html>
