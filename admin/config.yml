@@ -1,1 +1,106 @@
+backend:
+  name: github
+  repo: Khensani29/milners-restaurant-menu
+  branch: main
 
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "Site Settings"
+    files:
+      - name: "settings"
+        label: "Branding & Design"
+        file: "content/settings.yml"
+        fields:
+          - { label: "Restaurant Name", name: "restaurant_name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string", required: false }
+          - { label: "Intro Text", name: "intro_text", widget: "text", required: false }
+          - { label: "Logo", name: "logo", widget: "image", required: false }
+          - { label: "Hero Image", name: "hero_image", widget: "image", required: false }
+
+          - label: "Primary Colour"
+            name: "primary_colour"
+            widget: "string"
+            default: "#26362c"
+
+          - label: "Secondary Colour"
+            name: "secondary_colour"
+            widget: "string"
+            default: "#c9bfae"
+
+          - label: "Background Colour"
+            name: "background_colour"
+            widget: "string"
+            default: "#f7f3ed"
+
+          - label: "Text Colour"
+            name: "text_colour"
+            widget: "string"
+            default: "#29251f"
+
+          - label: "Muted Text Colour"
+            name: "muted_text_colour"
+            widget: "string"
+            default: "#5f5a52"
+
+          - { label: "Footer Text", name: "footer_text", widget: "string", required: false }
+
+  - name: "menu"
+    label: "Menu"
+    files:
+      - name: "menu"
+        label: "Milner's Menu"
+        file: "content/menu.yml"
+        fields:
+
+          - label: "Starters"
+            name: "starters"
+            widget: "list"
+            fields:
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Dietary Label", name: "dietary", widget: "string", required: false }
+
+          - label: "Salads"
+            name: "salads"
+            widget: "list"
+            fields:
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Dietary Label", name: "dietary", widget: "string", required: false }
+
+          - label: "Pasta"
+            name: "pasta"
+            widget: "list"
+            fields:
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Dietary Label", name: "dietary", widget: "string", required: false }
+
+          - label: "Mains"
+            name: "mains"
+            widget: "list"
+            fields:
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Dietary Label", name: "dietary", widget: "string", required: false }
+
+          - label: "Desserts"
+            name: "desserts"
+            widget: "list"
+            fields:
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Dietary Label", name: "dietary", widget: "string", required: false }
