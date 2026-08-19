@@ -1,6 +1,8 @@
 restaurant_name: Milner's Restaurant
 tagline: Good food. Unhurried moments.
-intro_text: Welcome to Milner's Restaurant at Holiday Inn Johannesburg Sunnyside Park.
+intro_text: |-
+  Welcome to Milner's Restaurant at Holiday Inn 
+  Johannesburg Sunnyside Park Hotel.
 logo: /images/uploads/2.png
 hero_image: ""
 primary_colour: "#1c4b34"
