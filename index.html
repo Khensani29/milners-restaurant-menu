@@ -192,6 +192,36 @@
         text-transform: uppercase;
     }
 
+        .section-banner {
+        width: 100%;
+        height: clamp(230px, 38vw, 340px);
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        margin: 18px 0 8px;
+        border-radius: 12px;
+    }
+
+    .section-banner-placeholder {
+        width: 100%;
+        height: clamp(230px, 38vw, 340px);
+        margin: 18px 0 8px;
+        border: 2px dashed var(--secondary);
+        border-radius: 12px;
+        background: color-mix(
+            in srgb,
+            var(--secondary) 15%,
+            var(--background)
+        );
+        color: var(--muted);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
     .dish-image {
         width: 100%;
         max-height: 340px;
@@ -407,6 +437,23 @@
             heading.textContent = sectionNames[key];
             section.appendChild(heading);
 
+            const bannerImage = menu[key + "_banner"];
+
+            if (bannerImage) {
+                const banner = document.createElement("img");
+                banner.className = "section-banner";
+                banner.src = bannerImage;
+                banner.alt = sectionNames[key] + " menu";
+                banner.loading = "lazy";
+                section.appendChild(banner);
+            } else {
+                const placeholder = document.createElement("div");
+                placeholder.className = "section-banner-placeholder";
+                placeholder.textContent =
+                    sectionNames[key] + " image placeholder";
+                section.appendChild(placeholder);
+            }
+            
             items.forEach(item => {
                 const menuItem = document.createElement("article");
                 menuItem.className = "menu-item";
