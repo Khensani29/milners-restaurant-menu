@@ -230,7 +230,50 @@
         border-radius: 4px;
         display: block;
     }
+    .social-section {
+        margin-top: 55px;
+        padding: 30px 10px;
+        border-top: 1px solid var(--secondary);
+        text-align: center;
+    }
 
+    .social-title {
+        margin: 0 0 20px;
+        color: var(--primary);
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+    .social-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .social-item {
+        min-width: 0;
+        padding: 12px 6px;
+        border: 1px solid var(--secondary);
+        border-radius: 12px;
+        color: var(--primary);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .social-icon {
+        font-size: 20px;
+        font-weight: bold;
+    }
     footer {
         background: var(--primary);
         color: white;
@@ -305,6 +348,34 @@
     <div id="menu">
         <div class="loading">Loading menu...</div>
     </div>
+    </div>
+
+    <div class="social-section">
+        <p class="social-title">Follow us</p>
+
+        <div class="social-links">
+
+            <div class="social-item">
+                <span class="social-icon">◎</span>
+                <span>holidayinnsunnysideparkhotel</span>
+            </div>
+
+            <div class="social-item">
+                <span class="social-icon">f</span>
+                <span>Holiday Inn Johannesburg Sunnyside Park Hotel</span>
+            </div>
+
+            <div class="social-item">
+                <span class="social-icon">♪</span>
+                <span>holidayinnsunnysidepark</span>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+<footer id="footer"></footer>
 </main>
 
 <footer id="footer"></footer>
