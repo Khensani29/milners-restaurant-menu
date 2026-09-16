@@ -433,26 +433,46 @@
             const section = document.createElement("section");
             section.id = key;
 
+            const picturePositions = {
+                starters: {
+                    field: "top_image",
+                    label: "Main menu picture"
+                },
+                pasta: {
+                    field: "middle_image",
+                    label: "Pasta and mains picture"
+                },
+                desserts: {
+                    field: "bottom_image",
+                    label: "Dessert picture"
+                }
+            };
+
+            const picturePosition = picturePositions[key];
+
+            if (picturePosition) {
+                const picturePath = menu[picturePosition.field];
+
+                if (picturePath) {
+                    const banner = document.createElement("img");
+                    banner.className = "section-banner";
+                    banner.src = picturePath;
+                    banner.alt = picturePosition.label;
+                    banner.loading = "lazy";
+                    section.appendChild(banner);
+                } else {
+                    const placeholder = document.createElement("div");
+                    placeholder.className =
+                        "section-banner-placeholder";
+                    placeholder.textContent =
+                        picturePosition.label;
+                    section.appendChild(placeholder);
+                }
+            }
+
             const heading = document.createElement("h2");
             heading.textContent = sectionNames[key];
             section.appendChild(heading);
-
-            const bannerImage = menu[key + "_banner"];
-
-            if (bannerImage) {
-                const banner = document.createElement("img");
-                banner.className = "section-banner";
-                banner.src = bannerImage;
-                banner.alt = sectionNames[key] + " menu";
-                banner.loading = "lazy";
-                section.appendChild(banner);
-            } else {
-                const placeholder = document.createElement("div");
-                placeholder.className = "section-banner-placeholder";
-                placeholder.textContent =
-                    sectionNames[key] + " image placeholder";
-                section.appendChild(placeholder);
-            }
             
             items.forEach(item => {
                 const menuItem = document.createElement("article");
