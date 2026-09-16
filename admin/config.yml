@@ -57,11 +57,9 @@ collections:
         file: "content/menu.yml"
         fields:
 
-          - { label: "Starters Banner", name: "starters_banner", widget: "image", required: false }
-          - { label: "Salads Banner", name: "salads_banner", widget: "image", required: false }
-          - { label: "Pasta Banner", name: "pasta_banner", widget: "image", required: false }
-          - { label: "Mains Banner", name: "mains_banner", widget: "image", required: false }
-          - { label: "Desserts Banner", name: "desserts_banner", widget: "image", required: false }
+          - { label: "Picture 1 — Before Starters", name: "top_image", widget: "image", required: false }
+          - { label: "Picture 2 — Between Salads and Pasta", name: "middle_image", widget: "image", required: false }
+          - { label: "Picture 3 — Between Mains and Desserts", name: "bottom_image", widget: "image", required: false }
 
           - label: "Starters"
             name: "starters"
