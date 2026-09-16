@@ -1,6 +1,6 @@
-salads_banner: /images/uploads/greek-salad-t.v.png
-mains_banner: /images/uploads/chatgpt-image-sep-16-2026-10_33_59-am.png
-desserts_banner: /images/uploads/chatgpt-image-sep-16-2026-10_44_40-am.png
+top_image: /images/uploads/chatgpt-image-sep-16-2026-11_25_20-am.png
+middle_image: /images/uploads/chatgpt-image-sep-16-2026-10_33_59-am.png
+bottom_image: /images/uploads/chatgpt-image-sep-16-2026-10_44_40-am.png
 starters:
   - name: Something Light
     description: Crisp Onion Rings battered and fried until crunchy.
@@ -71,6 +71,45 @@ pasta:
     price: R150
     image: ""
     dietary: Vegan
+desserts:
+  - name: Vanilla Ice Cream and Chocolate Sauce
+    description: 3 scoops of creamy vanilla ice cream accompanied by rich, warm
+      chocolate sauce.
+    price: R75
+    image: ""
+    dietary: ""
+  - name: Homemade Banoffee Pie
+    description: A no-bake dessert of crushed biscuit-butter crust smothered in
+      thick caramel and fresh banana slices, and topped with whipped cream.
+    price: R80
+    image: ""
+    dietary: ""
+  - name: Carrot Cake
+    description: Made with applesauce and glazed with lemon, it contains no butter,
+      milk or eggs.
+    price: R80
+    image: ""
+    dietary: "Vegan "
+  - name: Banana Brownies
+    description: Incredibly delicious, completely plant-based, marbled with peanut
+      butter and sprinkled with cinnamon.
+    price: R80
+    image: ""
+    dietary: Vegan
+  - name: Fresh Fruit Salad and Ice Cream
+    description: A refreshing mix of seasonal fresh fruit topped with a velvety
+      scoop of vanilla ice cream.
+    price: R85
+    image: ""
+    dietary: ""
+  - name: Passionfruit Cheesecake
+    description: A refreshing balance of cream cheese and zesty, tart passionfruit
+      set on a crushed gingernut base and spread with passionfruit jelly.
+    price: R105
+    image: ""
+    dietary: ""
+mains_banner: /images/uploads/chatgpt-image-sep-16-2026-10_33_59-am.png
+salads_banner: /images/uploads/greek-salad-t.v.png
 mains:
   - name: Spanish Omelette
     description: Eggless and gluten-free, this is our vegan take on the classic
@@ -140,40 +179,4 @@ mains:
     price: R250
     image: ""
     dietary: ""
-desserts:
-  - name: Vanilla Ice Cream and Chocolate Sauce
-    description: 3 scoops of creamy vanilla ice cream accompanied by rich, warm
-      chocolate sauce.
-    price: R75
-    image: ""
-    dietary: ""
-  - name: Homemade Banoffee Pie
-    description: A no-bake dessert of crushed biscuit-butter crust smothered in
-      thick caramel and fresh banana slices, and topped with whipped cream.
-    price: R80
-    image: ""
-    dietary: ""
-  - name: Carrot Cake
-    description: Made with applesauce and glazed with lemon, it contains no butter,
-      milk or eggs.
-    price: R80
-    image: ""
-    dietary: "Vegan "
-  - name: Banana Brownies
-    description: Incredibly delicious, completely plant-based, marbled with peanut
-      butter and sprinkled with cinnamon.
-    price: R80
-    image: ""
-    dietary: Vegan
-  - name: Fresh Fruit Salad and Ice Cream
-    description: A refreshing mix of seasonal fresh fruit topped with a velvety
-      scoop of vanilla ice cream.
-    price: R85
-    image: ""
-    dietary: ""
-  - name: Passionfruit Cheesecake
-    description: A refreshing balance of cream cheese and zesty, tart passionfruit
-      set on a crushed gingernut base and spread with passionfruit jelly.
-    price: R105
-    image: ""
-    dietary: ""
+desserts_banner: /images/uploads/chatgpt-image-sep-16-2026-10_44_40-am.png
