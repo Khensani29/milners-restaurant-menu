@@ -192,7 +192,7 @@
         text-transform: uppercase;
     }
 
-        .section-banner {
+    .section-banner {
         width: 100%;
         height: clamp(230px, 38vw, 340px);
         object-fit: cover;
@@ -268,12 +268,31 @@
         font-size: 10px;
         line-height: 1.4;
         overflow-wrap: anywhere;
+        text-decoration: none;
+        transition: background-color 0.2s ease, color 0.2s ease,
+            transform 0.2s ease;
     }
 
     .social-icon {
-        font-size: 20px;
-        font-weight: bold;
+        display: block;
+        width: 22px;
+        height: 22px;
     }
+
+    .social-icon svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .social-item:hover,
+    .social-item:focus-visible {
+        background: var(--primary);
+        color: white;
+        transform: translateY(-2px);
+        outline: none;
+    }
+
     footer {
         background: var(--primary);
         color: white;
@@ -353,20 +372,50 @@
         <p class="social-title">Follow us</p>
 
         <div class="social-links">
-            <div class="social-item">
-                <span class="social-icon">◎</span>
+            <a class="social-item"
+               href="https://www.instagram.com/holidayinnsunnysideparkhotel/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Open Holiday Inn Sunnyside Park Hotel on Instagram">
+                <span class="social-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img">
+                        <rect x="3" y="3" width="18" height="18" rx="5"
+                              fill="none" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="12" cy="12" r="4"
+                                fill="none" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/>
+                    </svg>
+                </span>
                 <span>holidayinnsunnysideparkhotel</span>
-            </div>
+            </a>
 
-            <div class="social-item">
-                <span class="social-icon">f</span>
+            <a class="social-item"
+               href="https://www.facebook.com/HolidayInnJohannesburgSunnysidePark/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Open Holiday Inn Johannesburg Sunnyside Park on Facebook">
+                <span class="social-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img">
+                        <path fill="currentColor"
+                              d="M13.6 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.5 1.7-1.5H17V4a24 24 0 0 0-2.5-.2c-2.5 0-4.2 1.5-4.2 4.3V10H7.5v3h2.8v8h3.3Z"/>
+                    </svg>
+                </span>
                 <span>Holiday Inn Johannesburg Sunnyside Park Hotel</span>
-            </div>
+            </a>
 
-            <div class="social-item">
-                <span class="social-icon">♪</span>
+            <a class="social-item"
+               href="https://www.tiktok.com/@holidayinnsunnysidepark"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Open Holiday Inn Sunnyside Park on TikTok">
+                <span class="social-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img">
+                        <path fill="currentColor"
+                              d="M15 3c.4 2.1 1.7 3.4 3.8 3.6v3A8.6 8.6 0 0 1 15 8.5v6.2a6 6 0 1 1-5.2-5.9v3.1a3 3 0 1 0 2.2 2.8V3h3Z"/>
+                    </svg>
+                </span>
                 <span>holidayinnsunnysidepark</span>
-            </div>
+            </a>
         </div>
     </div>
 </main>
@@ -380,6 +429,21 @@
         pasta: "Pasta",
         mains: "Mains",
         desserts: "Desserts"
+    };
+
+    const picturePositions = {
+        starters: {
+            field: "top_image",
+            label: "Main menu picture"
+        },
+        pasta: {
+            field: "middle_image",
+            label: "Pasta and mains picture"
+        },
+        desserts: {
+            field: "bottom_image",
+            label: "Dessert picture"
+        }
     };
 
     function safeText(value) {
@@ -496,21 +560,6 @@
 
             const section = document.createElement("section");
             section.id = key;
-
-            const picturePositions = {
-                starters: {
-                    field: "top_image",
-                    label: "Main menu picture"
-                },
-                pasta: {
-                    field: "middle_image",
-                    label: "Pasta and mains picture"
-                },
-                desserts: {
-                    field: "bottom_image",
-                    label: "Dessert picture"
-                }
-            };
 
             const picturePosition = picturePositions[key];
 
